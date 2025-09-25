@@ -1,6 +1,5 @@
 name: node js workflow
 
-
 on:
   push:
     branches: [ "main" ]
@@ -20,11 +19,10 @@ jobs:
         with:
           node-version: 18
           
-
       - name: Install dependencies
         run: npm install
         working-directory: web
-        
+
       - name: Run tests
         run: npm test
         working-directory: web
